@@ -1,0 +1,88 @@
+
+/*Change the font style on the Entire Document */
+@font-face{
+  font-family: TW;
+  src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face{
+  font-family: NS;
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face{
+  font-family: Times;
+  src: url(../fonts/times.ttf)
+}
+
+h1 {
+	font-family: TW;
+}
+
+
+.normal {
+	font-family: NS;
+	text-decoration:none;
+}
+
+a.normal:link {color: black;}
+
+a.normal:visited {color: black;}
+
+a.normal:hover {color: blue;}
+
+
+nav {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #a31f34;
+	font-family: TW;
+	font-size: 1.75vw;
+	list-style-type: none;
+}
+
+nav li {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 20%;
+	float: left;
+    text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+    }
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li a:link {color: white;}
+
+nav li a:visited {color: white;}
+
+nav li a:hover {color: #f5e8ea;}
+
+
+a:link {color: black;}
+
+a:visited {color: black;}
+
+
+p {
+	font-family: NS;
+	font-size: 120%;
+}
+
+ul{
+	font-family: NS;
+	font-fize: 120%;
+}
+
+i.ipa {
+	font-family: Times;
+	font-family: serif;
+	font-style: normal;
+	font-weight: normal;
+}
+

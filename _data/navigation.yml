@@ -1,0 +1,10 @@
+- name: About
+  link: /
+- name: CV
+  link: cv
+- name: Talks
+  link: talks
+- name: Papers
+  link: papers
+- name: Teaching
+  link: teaching
