@@ -36,9 +36,8 @@ nav {
 	display: inline-block;
 	box-sizing: border-box;
 	width: 100%;
-	background-color: #a31f34;
 	font-family: TW;
-	font-size: 1.75vw;
+	font-size: 130%;
 	list-style-type: none;
 }
 
@@ -47,11 +46,17 @@ nav li {
 	padding: 10px;
 	width: 20%;
 	float: left;
+	margin: 0 0 0 0;
     text-align: center;
+	background-color: #164739;
 	border-style: solid;
 	border-width: 1px;
 	border-color: white;
     }
+
+nav li:hover {background-color: #418571;}
+
+nav li:active {background-color: #418571;}
 
 nav li a {
 	text-decoration: none;
@@ -71,13 +76,18 @@ a:visited {color: black;}
 
 p {
 	font-family: NS;
+	margin: 15px;
 	font-size: 120%;
 }
 
 ul{
 	font-family: NS;
-	font-fize: 120%;
-	margin: 5px;
+	font-size: 100%;
+	list-style-type: none;
+}
+
+li {
+    margin: 0 0 10px 0;
 }
 
 i.ipa {
