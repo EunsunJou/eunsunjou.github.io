@@ -15,6 +15,11 @@
   src: url(../fonts/times.ttf)
 }
 
+@font-face{
+  font-family: mono;
+  src: url(../fonts/cour.ttf)
+}
+
 h1 {
 	font-family: TW;
 }
@@ -117,4 +122,10 @@ i.ipa {
 }
 .playbutton:hover{
 	background-color:#e58f8f;
+}
+
+m {
+	font-family: mono;
+	font-style: normal;
+	font-weight: normal;
 }
