@@ -103,3 +103,13 @@ i.ipa {
 	font-weight: normal;
 }
 
+input[type=button] {
+	font-family: NS;
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 120%;
+}
