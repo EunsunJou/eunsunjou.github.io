@@ -1,0 +1,122 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=1in, includehead, includefoot]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = blue, %Colour for external hyperlinks
+	linkcolor    = black, %Colour of internal links
+	citecolor   = black %Colour of citations
+}
+
+
+
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+\newcommand{\asof}{\monthyeardate\today}
+
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{12pt}
+\renewcommand{\headrulewidth}{0pt} % decorative line below header
+\setlength{\headsep}{15pt}
+\cfoot{Page {\thepage} of {\pageref*{LastPage}}} % page number
+\fancyhead[L]{Eunsun Jou}
+\fancyhead[R]{\asof}
+\fancypagestyle{firstpage}{%
+	\lhead{}
+	\rhead{\asof}
+}
+
+
+\usepackage{multirow}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+%%%%%%%%%%%% TITLE %%%%%%%%%%%%%
+\begin{center}
+{\Large \textbf{Curriculum Vitae}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{firstpage}
+
+%%%%%%%%%%%% HEADING %%%%%%%%%%%%%
+{\Large \textbf{Eunsun Jou}}\\
+Ph.D. student{\hfill}{Email: \href{mailto:jou@mit.edu}{jou@mit.edu}}\\
+Department of Linguistics\\
+Massachusetts Institute of Technology{\hfill}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Education}
+\subsubsection*{Degree Programs}
+\begin{tabular}{p{0.05\textwidth}|p{0.95\textwidth}}
+	{2018}&{\textbf{M.A. in Linguistics -- Seoul National University}}\\
+	{}&{Thesis: Embedded Topicalization in Korean Factive Complement Clauses: An Experimental Approach}\\
+	{}&{Thesis Supervisor: Dr. Heejeong Ko}\\
+ \end{tabular}
+{\linebreak}
+{\linebreak}
+\begin{tabular}{p{0.05\textwidth}|p{0.95\textwidth}}
+   {2016}&{\textbf{B.A. in Linguistics -- Seoul National University}}\\
+\end{tabular}
+
+\subsubsection*{Non-Degree Programs}
+\begin{tabular}{p{0.05\textwidth}|p{0.95\textwidth}}
+	{2017}&{\textbf{LSA Linguistic Institute -- University of Kentucky}}\\
+\end{tabular}
+
+{\null}
+\subsection*{Proceedings}
+{2017. The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. \textit{Proceedings of the 2017 Linguistic Society of Korea Summer Conference}. 145-156. [ Link: {\href{https://www.dropbox.com/s/07r9r0tsg7p9j4t/EunsunJou-LSK.pdf?dl=0}{http://bit.ly/esjou-proceeding}} ]}
+
+{\null}
+\subsection*{Conference Presentations}
+\subsubsection*{Talks}
+{2018. Embedded topicalization in Korean factive clauses and islands: Experimental approach. The 26th Japanese/Korean Linguistics Conference. UCLA (Los Angeles, USA)}\\
+
+{2017. The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. The Linguistic Society of Korea Summer Conference. Chungbuk National University (Cheongju, South Korea).
+
+\subsubsection*{Posters}
+{2019. Embedded topicalization in Korean factive complement clauses: An experimental approach. 93rd Annual Meeting of the Linguistic Society of America. New York City, USA.}
+
+{\null}
+\subsection*{Research Experience}
+{2017. Research Assistant for the World-leading University Fostering Program.\\
+Department of Linguistics, Seoul National University.
+\begin{itemize}
+	\item{{\small Assistant to organizing committee of the 19th Seoul International Conference on Generative Grammar (SICOGG 19)}}
+	\item{{\small Collected and compiled data for the departmental consulting project}}
+\end{itemize}
+}
+
+{\null}
+\subsection*{Honors and Awards}
+{\textbf{Eminence Scholarship}} (2015)\\{Seoul National University}\\
+
+{\textbf{Merit-based Scholarship}} (2012, 2014)\\{Seoul National University}\\
+
+{\textbf{Scholarship for Superior Academic Performance}} (2011)\\{Seoul National University}\\
+
+
+{\null}
+\subsection*{Skills}
+\subsubsection*{Languages}
+\noindent{Korean (native)}, English (fluent), French (advanced), German (beginner), Mandarin (beginner)
+\subsubsection*{Computational}
+\noindent{Python,} {\LaTeX}, R, Perl
+
+\end{document}
