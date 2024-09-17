@@ -1,7 +1,7 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 \usepackage[letterpaper, margin=1in, includehead, includefoot]{geometry}
 
 \usepackage{enumitem}
@@ -12,7 +12,7 @@
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks   = true, %Colours links instead of ugly boxes
-	urlcolor     = blue, %Colour for external hyperlinks
+	urlcolor     = black, %Colour for external hyperlinks
 	linkcolor    = black, %Colour of internal links
 	citecolor   = black %Colour of citations
 }
@@ -29,6 +29,8 @@
 \newcommand{\asof}{\monthyeardate\today}
 
 \usepackage{lastpage}
+
+\usepackage{hanging}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -48,9 +50,11 @@
 
 \setlength\parindent{0pt}
 
-\newcommand{\sect}[1]{{\fontsize{15}{25}\selectfont \textbf{#1}} {\vspace{0.1cm}} \hrule {\vspace{0.3cm}}}
+\newcommand{\sect}[1]{\vspace{7.5mm} {\fontsize{14}{21}\selectfont \textbf{#1}} {\vspace{0.1cm}} \hrule {\vspace{0.3cm}}}
 
-\newcommand{\subsect}[1]{{\fontsize{12}{18}\selectfont \textit{\textbf{#1}}} {\vspace{0.3cm}}}
+\newcommand{\subsect}[1]{\vspace{3mm} {\fontsize{11}{18}\selectfont \textit{\textbf{#1}}} {\vspace{0.3cm}}}
+
+\newcommand{\paper}[2]{\begin{tabular}{p{0.1\textwidth}p{0.9\textwidth}}{#1}&{#2}\\\end{tabular}\vspace{2mm}}
 
 \begin{document}
 
@@ -63,7 +67,6 @@
 \thispagestyle{firstpage}
 
 %%%%%%%%%%%% CONTACT %%%%%%%%%%%%%
-\sect{Contact}
 
 \begin{minipage}[t]{0.5\textwidth}
 \begin{flushleft}
@@ -76,7 +79,7 @@
 \begin{flushright}
 MIT Department of Linguistics and Philosophy
 
-77 Massachusetts Avenue, 32D-866
+77 Massachusetts Avenue, 32-D860
 
 Cambridge, MA, USA 02139
 \end{flushright}
@@ -84,103 +87,98 @@ Cambridge, MA, USA 02139
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{1cm}
+
+%%%%%%%%%%%% POSITIONS %%%%%%%%%%%%%
+
+\sect{Academic Positions}
+
+\begin{tabular}{p{0.1\textwidth}p{0.9\textwidth}}
+{2024--2025}&{\textbf{Postdoctoral associate -- Massachusetts Institute of Technology}}\\
+\end{tabular}
+
 
 %%%%%%%%%%%% EDUCATION %%%%%%%%%%%%%
 \sect{Education}
 
-\subsubsection*{Degree Programs}
-\begin{tabular}{p{0.04\textwidth}p{0.96\textwidth}}
-{2024}&{\textbf{Ph.D. in Linguistics -- Massachusetts Institute of Technology}}\\
+\subsect{Degree Programs}
+
+\begin{tabular}{p{0.1\linewidth}p{0.9\linewidth}}
+{2019--2024}&{\textbf{Ph.D. in Linguistics -- Massachusetts Institute of Technology}}\\
 {}&{Thesis: {\textit{Structural case on adjuncts}}}\\
 {}&{Committee: Adam Albright, Heejeong Ko, David Pesetsky (chair), Norvin Richards}
 \end{tabular}
 
-\vspace{0.2cm}
+\vspace{2mm}
 
-\begin{tabular}{p{0.04\textwidth}p{0.96\textwidth}}
-{2018}&{\textbf{M.A. in Linguistics -- Seoul National University}}\\
-{}&{Thesis: {\textit{Embedded Topicalization in Korean Factive Complement Clauses: An Experimental Approach}}}\\
+\begin{tabular}{p{0.1\textwidth}p{0.9\textwidth}}
+{2016--2018}&{\textbf{M.A. in Linguistics -- Seoul National University}}\\
+{}&{Thesis: {\textit{Embedded topicalization in Korean factive complement clauses: An experimental approach}}}\\
                   {}&{Committee: Han-Byul Chung, Heejeong Ko, Seungho Nam (chair)}\\
  \end{tabular}
 
-\vspace{0.2cm}
+\vspace{2mm}
 
-\begin{tabular}{p{0.04\textwidth}p{0.96\textwidth}}
-{2016}&{\textbf{B.A. in Linguistics -- Seoul National University}}\\
+\begin{tabular}{p{0.1\textwidth}p{0.9\textwidth}}
+{2011--2016}&{\textbf{B.A. in Linguistics -- Seoul National University}}\\
 \end{tabular}
 
-\subsubsection*{Non-Degree Programs}
-\begin{tabular}{p{0.05\textwidth}p{0.94\textwidth}}
+\subsect{Non-Degree Programs}
+
+\begin{tabular}{p{0.1\textwidth}p{0.9\textwidth}}
 {2022}&{{\textbf{Crete Summer School of Linguistics.}} Rethymno, Greece.}\\
 {2017}&{\textbf{Linguistic Institute -- Linguistic Society of America.} Lexington, KY, USA.}\\
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\vspace{1cm}}
-
 {\sect{Publications}}
 
 {\subsect{Articles}}
 
-2024. Honorification as Agree in Korean and Beyond. {\textit{Glossa: a journal of general linguistics}} 9(1). {\href{https://doi.org/10.16995/glossa.9565}{https://doi.org/10.16995/glossa.9565}}\\
+\paper{2024}{Honorification as Agree in Korean and Beyond. {\textit{Glossa: a journal of general linguistics}} 9(1). {\href{https://doi.org/10.16995/glossa.9565}{https://doi.org/10.16995/glossa.9565}}}
 
 {\subsect{Conference Proceedings}}
 
-{To appear.  Positional restriction on case assignment: Evidence from Korean nominal adverbials. {\textit{Proceedings of WAFL 17}.}}\\
+\paper{To appear}{Positional restriction on case assignment: Evidence from Korean nominal adverbials. {\textit{Proceedings of WAFL 17}}}
 
-{2023. An economy-based amendment to learning hidden structure with Robust Interpretive Parsing. \textit{Supplemental Proceedings of the 2022 Annual Meeting on Phonology.}}\\
+\paper{2023}{An economy-based amendment to learning hidden structure with Robust Interpretive Parsing. \textit{Supplemental Proceedings of the 2022 Annual Meeting on Phonology.} {\href{https://doi.org/10.3765/amp.v10i0.5420}{https://doi.org/10.3765/amp.v10i0.5420}}}
 
-{2018. Embedded topicalization in Korean factive complement clauses: An experimental approach. \textit{Proceedings of Japanese/Korean Linguistics 26.}}\\
+\paper{2018}{Embedded topicalization in Korean factive complement clauses: An experimental approach. \textit{Proceedings of Japanese/Korean Linguistics 26.}}
 
-{2017. The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. \textit{Proceedings of the 2017 Linguistic Society of Korea Summer Conference}. 145-156\\
+\paper{2017}{The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. \textit{Proceedings of the 2017 Linguistic Society of Korea Summer Conference}. 145-156}
 
-{\sect{Unpublished Manuscripts}}}
-
-2018. Embedded Topicalization in Korean Factive Complement Clauses: An Experimental Approach. M.A. Thesis. Seoul National University.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\vspace{1cm}}
-
 {\sect{Presentations}}
 
-{2023. Positional restriction on case assignment: Evidence from Korean nominal adverbials. Workshop on Altaic Formal Linguistics 17 (WAFL 17).}\\
+\paper{Upcoming}{Korean nonactive suffixes {\textit{HI}} and {\textit{eci}} are realizations of little {\textit{v}}. 2025 Linguistic Society of America (LSA) Annual Meeting.}
 
-{2023. Case marking of Korean nominal adverbials correlates with subject position. The 25th Seoul International Conference on Generative Grammar (SICOGG 25).}\\
+\paper{2023}{Positional restriction on case assignment: Evidence from Korean nominal adverbials. Workshop on Altaic Formal Linguistics 17 (WAFL 17).}
 
-{2023. Case marking of Korean nominal adverbials correlates with subject position. Syntax seminar at Seoul National University. }\\
+\paper{2023}{Case marking of Korean nominal adverbials correlates with subject position. The 25th Seoul International Conference on Generative Grammar (SICOGG 25).}
 
-{2022. An economy-based amendment to Robust Interpretive Parsing with the GLA. Annual Meeting on Phonology (AMP 2022).}\\
+\paper{2022}{An economy-based amendment to Robust Interpretive Parsing with the GLA. Annual Meeting on Phonology (AMP 2022).}
 
-{2022. Korean addressee honorification as Cyclic Agree at Force: Comparison with Magahi. The 45th Generative Linguistics in the Old World (GLOW 45).}\\
+\paper{2022}{Korean addressee honorification as Cyclic Agree at Force: Comparison with Magahi. The 45th Generative Linguistics in the Old World (GLOW 45).}
 
-{2019. Embedded topicalization in Korean factive complement clauses. 93rd Annual Meeting of the Linguistic Society of America (LSA).}\\
+\paper{2019}{Embedded topicalization in Korean factive complement clauses. 93rd Annual Meeting of the Linguistic Society of America (LSA).}
 
-{2018. Embedded topicalization in Korean factive clauses and islands: Experimental approach. The 26th Japanese/Korean Linguistics Conference (J/K 26).}\\
+\paper{2018}{Embedded topicalization in Korean factive clauses and islands: Experimental approach. The 26th Japanese/Korean Linguistics Conference (J/K 26).}
 
-{2017. The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. The Linguistic Society of Korea Summer Conference.}
+\paper{2017}{The distribution and interpretation of the Korean topic marker \textit{nun} -- a feature-inheritance approach. The Linguistic Society of Korea Summer Conference.}
 
-{\vspace{1cm}}
 
 \sect{Teaching Assistantships}
 
-Spring 2023. Introduction to Linguistics (MIT 24.900)
+\paper{2023}{Introduction to Linguistics (MIT 24.900) \newline Instructor: Donca Steriade}
 
-{\hphantom{Spring 2023.}} Instructor: Donca Steriade\\
+\paper{2022}{Introduction to Phonology (Crete Summer School of Linguistics) \newline  Instructor: Douglas Pulleyblank}
 
-Summer 2022. Introduction to Phonology (Crete Summer School of Linguistics)
+\paper{2022}{Language and Structure II: Syntax (MIT 24.902) \newline Instructor: Sabine Iatridou}
 
-{\hphantom{Summer 2022.}} Instructor: Douglas Pulleyblank\\
+\paper{2021}{Introduction to Linguistics (MIT 24.900) \newline Instructor: Adam Albright}
 
-Spring 2022. Language and Structure II: Syntax (MIT 24.902)
-
-{\hphantom{Spring 2022.}} Instructor: Sabine Iatridou\\
-
-Fall 2021. Introduction to Linguistics (MIT 24.900)
-
-{\hphantom{Fall 2021.}} Instructor: Adam Albright\\
 
 \sect{Services}
 
@@ -190,11 +188,13 @@ Fall 2021. Introduction to Linguistics (MIT 24.900)
 
 \subsubsection*{Ad-hoc reviewing for journals}
 
-Linguistic Inquiry (2023), Journal of East Asian Linguistics (2024), Glossa (2024)
+{\textit{Glossa}} (2024),
+{\textit{Journal of East Asian Linguistics}} (2024),
+{\textit{Linguistic Inquiry}} (2023)
 
 \subsubsection*{Conference reviews}
 
-NELS (2023), CLS (2024)
+CLS (2024), NELS (2023)
 
 \vspace{\baselineskip}
 
@@ -216,12 +216,10 @@ Fall 2020 -- Spring 2021. Syntax Square (Reading group) co-organizer
 \end{itemize}
 }
 
-\vspace{1cm}
-
 \sect{Skills}
 
 \subsubsection*{Languages}
-\noindent{Korean (native)}, English (fluent), French (advanced), German (reading knowledge)
+\noindent{Korean (native)}, English (fluent), French (advanced)
 \subsubsection*{Computational}
 \noindent{Python,} {\LaTeX}, R, Perl
 
