@@ -7,7 +7,15 @@
 \usepackage{enumitem}
 
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\setmainfont{times.ttf}[
+ItalicFont = timesi.ttf ,
+BoldFont = timesbd.ttf ,
+BoldItalicFont = timesbi.ttf,
+]
+\setsansfont{arial.ttf}
+
+%% Set fontfamily command for CJK fonts
+\newfontfamily\batangfont{batang.ttf}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -60,7 +68,7 @@
 
 %%%%%%%%%%%% TITLE %%%%%%%%%%%%%
 \begin{center}
-{\Large \textbf{Eunsun Jou}}
+{\Large \textbf{Eunsun Jou ({\batangfont 주은선})}}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
