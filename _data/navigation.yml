@@ -1,10 +1,8 @@
-- name: About
-  link: /
 - name: CV
-  link: cv
+  link: "#cv"
+- name: Publications
+  link: "#publications"
 - name: Presentations
-  link: presentations
-- name: Papers
-  link: papers
+  link: "#presentations"
 - name: Teaching
-  link: teaching
+  link: "#teaching"
